@@ -11,12 +11,12 @@ window.onload = function(){
         '-': function (x, y) { return x - y },
         '*': function (x, y) { return x * y },
         '/': function (x, y) { return x / y },
-    }
+    };
 
 
     function hover(element, enter, leave){
-        element.addEventListener('mouseenter', enter)
-        element.addEventListener('mouseleave', leave)
+        element.addEventListener('mouseenter', enter);
+        element.addEventListener('mouseleave', leave);
       }
 
     btn.addEventListener('click',function(e){
@@ -59,13 +59,13 @@ window.onload = function(){
     show.addEventListener('click', function(e){
         show.classList.add("active");
         hide.classList.remove("active");
-        !form.classList.contains("visible") ? form.classList.add("visible") : ""
+        !form.classList.contains("visible") ? form.classList.add("visible") : "";
         e.preventDefault();
     })
     hide.addEventListener('click', function(e){
         show.classList.remove("active");
         hide.classList.add("active");
-        form.classList.contains("visible") ? form.classList.remove("visible") : ""
+        form.classList.contains("visible") ? form.classList.remove("visible") : "";
         e.preventDefault();
     })
     
@@ -77,10 +77,9 @@ window.onload = function(){
         }
         if(nb1.value !== ""){
             let color = nb1.nextElementSibling.style.background;
-            setInterval()
-            nb1.nextElementSibling.style.background="green"
+            nb1.nextElementSibling.style.background="green";
         }else{
-            nb1.nextElementSibling.style.background="crimson"
+            nb1.nextElementSibling.style.background="crimson";
         }
     })
     nb2.addEventListener("input", function(e){
@@ -90,9 +89,9 @@ window.onload = function(){
             btn.setAttribute("disabled", "disabled");
         }
         if(nb2.value !== ""){
-            nb2.nextElementSibling.style.background="green"
+            nb2.nextElementSibling.style.background="green";
         }else{
-            nb2.nextElementSibling.style.background="crimson"
+            nb2.nextElementSibling.style.background="crimson";
         }
     })
     
